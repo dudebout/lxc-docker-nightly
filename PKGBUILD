@@ -6,7 +6,7 @@ pkgdesc='Docker: the Linux container engine'
 arch=('x86_64')
 url='http://www.docker.io'
 license=('Apache')
-#https://github.com/dotcloud/docker/blob/v0.7-rc3/hack/PACKAGERS.md#runtime-dependencies
+# https://github.com/dotcloud/docker/blob/master/hack/PACKAGERS.md#runtime-dependencies
 depends=('tar>=1.26'
          'iproute2>=3.5'
          'iptables>=1.4'
