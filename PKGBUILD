@@ -1,6 +1,6 @@
 # Maintainer: Nicolas Dudebout <nicolas.dudebout@gatech.edu>
 pkgname=lxc-docker-nightly
-pkgver=latest
+pkgver=0.7.0rc4
 pkgrel=1
 pkgdesc='Docker: the Linux container engine'
 arch=('x86_64')
@@ -15,12 +15,13 @@ depends=('tar>=1.26'
          'xz>=4.9')
 provides=('lxc-docker-nightly')
 conflicts=('lxc-docker' 'lxc-docker-git')
-source=("http://test.docker.io/builds/Linux/x86_64/docker-$pkgver"
+# See https://test.docker.io/ubuntu/dists/docker/main/binary-amd64/Packages for a list of available binaries
+source=("docker::http://test.docker.io/builds/Linux/$arch/docker-0.7.0-rc4"
         'docker.service')
 sha512sums=('SKIP'
             'f6e1f6cc2ed66cd3eb674383326d52dc1fad0599677103b1539ae7002d06e6458c2bc5dc9a04b2024058b5b2aa3cf9211a200acebbd93ab1016d48ed849d2499')
 
 package() {
+  install -D -m 755 "$srcdir/docker" "$pkgdir/usr/bin/docker"
   install -D -m 644 "$srcdir/docker.service" "$pkgdir/usr/lib/systemd/system/docker.service"
-  install -D -m 755 "$srcdir/docker-$pkgver" "$pkgdir/usr/bin/docker"
 }
