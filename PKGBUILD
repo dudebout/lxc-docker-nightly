@@ -1,4 +1,5 @@
 # Maintainer: Nicolas Dudebout <nicolas.dudebout@gatech.edu>
+# Repository: https://github.com/dudebout/lxc-docker-nightly
 pkgname=lxc-docker-nightly
 pkgver=0.7.0rc4
 pkgrel=1
