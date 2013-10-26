@@ -17,6 +17,7 @@ provides=('lxc-docker-nightly')
 conflicts=('lxc-docker' 'lxc-docker-git')
 backup=('etc/sysctl.d/docker.conf')
 install='docker.install'
+changelog='ChangeLog.docker'
 # See https://test.docker.io/ubuntu/dists/docker/main/binary-amd64/Packages for a list of available binaries
 source=("docker::http://test.docker.io/builds/Linux/$arch/docker-0.7.0-rc4"
         'https://raw.github.com/dotcloud/docker/master/contrib/init/systemd/docker.service'
