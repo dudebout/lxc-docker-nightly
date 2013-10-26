@@ -8,8 +8,8 @@ post_install() {
 	echo "      $ sudo systemctl enable docker"
 	echo "  + Add your user to the docker group to run the docker client without sudo:"
 	echo "      $ sudo usermod -a -G docker <username>"
-	echo "    You will need to login again for the change to take effect or run the
-	echo "    following command for a temporary change in the current shell:
+	echo "    You will need to login again for the change to take effect or run the"
+	echo "    following command for a temporary change in the current shell:"
 	echo "	    $ newgrp docker"
 	echo "  + Enable IPv4 forwarding to enable internet connections inside the containers."
 	echo "    See /etc/sysctl.d/docker.conf for WARNING and instructions."
