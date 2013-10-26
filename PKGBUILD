@@ -2,9 +2,9 @@
 pkgname=lxc-docker-nightly
 pkgver=latest
 pkgrel=1
-pkgdesc="Docker: the Linux container engine"
+pkgdesc='Docker: the Linux container engine'
 arch=('x86_64')
-url="http://www.docker.io"
+url='http://www.docker.io'
 license=('Apache')
 #https://github.com/dotcloud/docker/blob/v0.7-rc3/hack/PACKAGERS.md#runtime-dependencies
 depends=('tar>=1.26'
