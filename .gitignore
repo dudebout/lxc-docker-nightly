@@ -1,4 +1,7 @@
-docker-latest
+docker
+docker.service
+docker.bash
+docker.zsh
 lxc-docker-nightly-*-*-*.pkg.tar.xz
 lxc-docker-nightly-*-*.src.tar.gz
 pkg/
