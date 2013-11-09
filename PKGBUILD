@@ -2,7 +2,7 @@
 # Repository: https://github.com/dudebout/lxc-docker-nightly
 pkgname=lxc-docker-nightly
 pkgver=0.7.0rc4
-pkgrel=1
+pkgrel=2
 pkgdesc='Docker: the Linux container engine'
 arch=('x86_64')
 url='http://www.docker.io'
